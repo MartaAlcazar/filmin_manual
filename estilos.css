@@ -160,12 +160,29 @@ h1 {
     color: #1FF8D0;
     font-weight: 500;
 }
+
+
 @media screen and (max-width : 900px) {
-h1{
-    padding-top: 10rem;
+    h1 {
+        padding-top: 10rem;
+font-size: 2.5rem;
 
-}}
+    }
+}
 
+@media screen and (max-width : 900px) {
+    h2 {
+        padding-top: 10rem;
+        font-weight: 500;
+
+    }
+}
+
+@media screen and (max-width : 900px) {
+    h3 {
+        padding-top: 10rem;
+    }
+}
 h2 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
@@ -873,6 +890,48 @@ header {
 .page-body {
     display: grid;
     grid-template-columns: 22rem auto;
+    grid-template-rows: 55rem auto;
+
+}
+@media screen and (max-width: 1200px) {
+    .page-body {
+        display: grid;
+
+        grid-template-rows: 20rem auto;
+        grid-template-columns: 22rem auto;
+
+
+    }
+}
+@media screen and (max-width: 1000px) {
+    .page-body {
+        display: grid;
+
+        grid-template-rows: 20rem auto;
+        grid-template-columns: 22rem auto;
+
+
+    }
+}
+@media screen and (max-width: 900px) {
+    .page-body {
+        display: grid;
+
+        grid-template-rows: 30rem auto;
+        grid-template-columns: 22rem auto;
+
+
+    }
+}
+@media screen and (max-width: 900px) {
+    .page-body {
+        display: grid;
+
+        grid-template-rows: 30rem auto;
+        grid-template-columns: 22rem auto;
+
+
+    }
 }
 
 
@@ -1111,4 +1170,26 @@ box-shadow: 0px 8px 10px -6px #07e8bf;
     .main_content {
 
 font-size: 1.5rem;    }
+}
+
+.main_banner{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+
+    
+}
+@media screen and (max-width: 900px){
+    .main_banner{
+        grid-column: 1/span 2;
+        margin-top: 8rem;
+    }
+}
+.main_banner iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
 }
