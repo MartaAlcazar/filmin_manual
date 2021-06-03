@@ -1,0 +1,628 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Colores corporativos</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2d4a2f25-8df7-4f6f-b58c-60f58ecf8be7" class="page sans"><header><h1 class="page-title">Colores corporativos</h1></header><div class="page-body"><table class="collection-content"><thead><tr><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesTitle"><path d="M7.73943662,8.6971831 C7.77640845,8.7834507 7.81338028,8.8943662 7.81338028,9.00528169 C7.81338028,9.49823944 7.40669014,9.89260563 6.91373239,9.89260563 C6.53169014,9.89260563 6.19894366,9.64612676 6.08802817,9.30105634 L5.75528169,8.33978873 L2.05809859,8.33978873 L1.72535211,9.30105634 C1.61443662,9.64612676 1.2693662,9.89260563 0.887323944,9.89260563 C0.394366197,9.89260563 0,9.49823944 0,9.00528169 C0,8.8943662 0.0246478873,8.7834507 0.0616197183,8.6971831 L2.46478873,2.48591549 C2.68661972,1.90669014 3.24119718,1.5 3.90669014,1.5 C4.55985915,1.5 5.12676056,1.90669014 5.34859155,2.48591549 L7.73943662,8.6971831 Z M2.60035211,6.82394366 L5.21302817,6.82394366 L3.90669014,3.10211268 L2.60035211,6.82394366 Z M11.3996479,3.70598592 C12.7552817,3.70598592 14,4.24823944 14,5.96126761 L14,9.07922535 C14,9.52288732 13.6549296,9.89260563 13.2112676,9.89260563 C12.8169014,9.89260563 12.471831,9.59683099 12.4225352,9.19014085 C12.028169,9.6584507 11.3257042,9.95422535 10.5492958,9.95422535 C9.60035211,9.95422535 8.47887324,9.31338028 8.47887324,7.98239437 C8.47887324,6.58978873 9.60035211,6.08450704 10.5492958,6.08450704 C11.3380282,6.08450704 12.040493,6.33098592 12.4348592,6.81161972 L12.4348592,5.98591549 C12.4348592,5.38204225 11.9172535,4.98767606 11.1285211,4.98767606 C10.6602113,4.98767606 10.2411972,5.11091549 9.80985915,5.38204225 C9.72359155,5.43133803 9.61267606,5.46830986 9.50176056,5.46830986 C9.18133803,5.46830986 8.91021127,5.1971831 8.91021127,4.86443662 C8.91021127,4.64260563 9.0334507,4.44542254 9.19366197,4.34683099 C9.87147887,3.90316901 10.6232394,3.70598592 11.3996479,3.70598592 Z M11.1778169,8.8943662 C11.6830986,8.8943662 12.1760563,8.72183099 12.4348592,8.37676056 L12.4348592,7.63732394 C12.1760563,7.29225352 11.6830986,7.11971831 11.1778169,7.11971831 C10.5616197,7.11971831 10.056338,7.45246479 10.056338,8.0193662 C10.056338,8.57394366 10.5616197,8.8943662 11.1778169,8.8943662 Z M0.65625,11.125 L13.34375,11.125 C13.7061869,11.125 14,11.4188131 14,11.78125 C14,12.1436869 13.7061869,12.4375 13.34375,12.4375 L0.65625,12.4375 C0.293813133,12.4375 4.43857149e-17,12.1436869 0,11.78125 C-4.43857149e-17,11.4188131 0.293813133,11.125 0.65625,11.125 Z"></path></svg></span>Name</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>HEX</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>RGB</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>CMYK</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>Pantone</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesText"><path d="M7,4.56818 C7,4.29204 6.77614,4.06818 6.5,4.06818 L0.5,4.06818 C0.223858,4.06818 0,4.29204 0,4.56818 L0,5.61364 C0,5.88978 0.223858,6.11364 0.5,6.11364 L6.5,6.11364 C6.77614,6.11364 7,5.88978 7,5.61364 L7,4.56818 Z M0.5,1 C0.223858,1 0,1.223858 0,1.5 L0,2.54545 C0,2.8216 0.223858,3.04545 0.5,3.04545 L12.5,3.04545 C12.7761,3.04545 13,2.8216 13,2.54545 L13,1.5 C13,1.223858 12.7761,1 12.5,1 L0.5,1 Z M0,8.68182 C0,8.95796 0.223858,9.18182 0.5,9.18182 L11.5,9.18182 C11.7761,9.18182 12,8.95796 12,8.68182 L12,7.63636 C12,7.36022 11.7761,7.13636 11.5,7.13636 L0.5,7.13636 C0.223858,7.13636 0,7.36022 0,7.63636 L0,8.68182 Z M0,11.75 C0,12.0261 0.223858,12.25 0.5,12.25 L9.5,12.25 C9.77614,12.25 10,12.0261 10,11.75 L10,10.70455 C10,10.4284 9.77614,10.20455 9.5,10.20455 L0.5,10.20455 C0.223858,10.20455 0,10.4284 0,10.70455 L0,11.75 Z"></path></svg></span>CSS</th><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.4);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Color</th></tr></thead><tbody><tr id="ab1f4427-b623-4d47-ae72-07c35b20504d"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Filmin%20Green%20ab1f4427b6234d47ae7207c35b20504d.html">Filmin Green</a></td><td class="cell-bM@h">07E8BF</td><td class="cell-NQ?H">7/232/191</td><td class="cell-NXiX">97/0/18/9</td><td class="cell-oEo]">2239C</td><td class="cell-tddV">rgba(7, 232, 191, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-green">Filmin Green</span></td></tr><tr id="51c83d22-e09d-4dd2-8c80-6e054f024b4a"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Moquette%20Magenta%2051c83d22e09d4dd28c806e054f024b4a.html">Moquette Magenta</a></td><td class="cell-bM@h">ED0047</td><td class="cell-NQ?H">237/0/71</td><td class="cell-NXiX">0/100/70/7</td><td class="cell-oEo]">192C</td><td class="cell-tddV">rgba(237, 0, 71, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-pink">Moquette Magenta</span></td></tr><tr id="74167872-a8ac-41eb-84d5-968cb2a8676c"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Clockwork%20Orange%2074167872a8ac41eb84d5968cb2a8676c.html">Clockwork Orange</a></td><td class="cell-bM@h">FF6B00</td><td class="cell-NQ?H">255/107/0</td><td class="cell-NXiX">0/58/100/0</td><td class="cell-oEo]">1505C</td><td class="cell-tddV">rgba(255, 107, 0, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-orange">Clockwork Orange</span></td></tr><tr id="51373de2-afee-47e8-9bb8-8e4938af39d4"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Searchlight%20Yellow%2051373de2afee47e89bb88e4938af39d4.html">Searchlight Yellow</a></td><td class="cell-bM@h">F5EC00</td><td class="cell-NQ?H">245/236/0</td><td class="cell-NXiX">0/4/100/4</td><td class="cell-oEo]">3945C</td><td class="cell-tddV">rgba(245, 236, 0, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-yellow">Searchlight Yellow</span></td></tr><tr id="5ce90994-5f72-4ddd-9708-32dec4027623"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Midnight%20Black%205ce909945f724ddd970832dec4027623.html">Midnight Black</a></td><td class="cell-bM@h">0F1E27</td><td class="cell-NQ?H">15/30/39</td><td class="cell-NXiX">62/23/0/85</td><td class="cell-oEo]">7547C</td><td class="cell-tddV">rgba(15, 30, 39, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-blue">Midnight Black</span></td></tr><tr id="8d32bf21-e860-47ad-8e86-283caa50f324"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Filmin%20Green%20Light15%208d32bf21e86047ad8e86283caa50f324.html">Filmin Green / Light15</a></td><td class="cell-bM@h">1FF8D0</td><td class="cell-NQ?H">31/248/208</td><td class="cell-NXiX">88/0/16/3</td><td class="cell-oEo]">3255C</td><td class="cell-tddV">rgba(31, 248, 208, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-green">Filmin Green</span></td></tr><tr id="c7a599db-cf9d-448c-9f5f-6df6be2c3397"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Filmin%20Green%20Light40%20c7a599dbcf9d448c9f5f6df6be2c3397.html">Filmin Green /Light40</a></td><td class="cell-bM@h">61FADE</td><td class="cell-NQ?H">97/250/222</td><td class="cell-NXiX">61/0/11/2</td><td class="cell-oEo]">3242C</td><td class="cell-tddV">rgba(97, 250, 222, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-green">Filmin Green</span></td></tr><tr id="9840ce45-82d3-4020-91a5-490ed55220b8"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Filmin%20Green%20Light60%209840ce4582d3402091a5490ed55220b8.html">Filmin Green/Light60</a></td><td class="cell-bM@h">95FBE9</td><td class="cell-NQ?H">149/251/223</td><td class="cell-NXiX">41/0/7/2</td><td class="cell-oEo]">304C</td><td class="cell-tddV">rgba(149, 251, 233, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-green">Filmin Green</span></td></tr><tr id="fc5c85d1-c002-409b-809b-8fc8ca4071f1"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Filmin%20Green%20Dark15%20fc5c85d1c002409b809b8fc8ca4071f1.html">Filmin Green /Dark15</a></td><td class="cell-bM@h">05C5A2</td><td class="cell-NQ?H">5/197/162</td><td class="cell-NXiX">97/0/18/23</td><td class="cell-oEo]">2240C</td><td class="cell-tddV">rgba(5, 197, 162, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-green">Filmin Green</span></td></tr><tr id="8989b803-5e5c-4a49-a082-45072c1cf383"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Filmin%20Green%20Dark40%208989b8035e5c4a49a08245072c1cf383.html">Filmin Green /Dark40</a></td><td class="cell-bM@h">048B72</td><td class="cell-NQ?H">4/139/114</td><td class="cell-NXiX">97/0/18/45</td><td class="cell-oEo]">327C</td><td class="cell-tddV">rgba(4, 139, 114, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-green">Filmin Green</span></td></tr><tr id="c361a465-67eb-4b32-80ea-f794138fc211"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Filmin%20Green%20Dark60%20c361a46567eb4b3280eaf794138fc211.html">Filmin Green /Dark60</a></td><td class="cell-bM@h">025C4C</td><td class="cell-NQ?H">2/92/76</td><td class="cell-NXiX">97/0/18/64</td><td class="cell-oEo]">561C</td><td class="cell-tddV">rgba(2, 92, 76, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-green">Filmin Green</span></td></tr><tr id="aa27fc6a-fe7d-4ec1-a8e4-72211c447188"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Moquette%20Magenta%20Light15%20aa27fc6afe7d4ec1a8e472211c447188.html">Moquette Magenta /Light15</a></td><td class="cell-bM@h">FE165C</td><td class="cell-NQ?H">254/22/92</td><td class="cell-NXiX">0/91/64/0</td><td class="cell-oEo]">2040C</td><td class="cell-tddV">rgba(254, 22, 92, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-pink">Moquette Magenta</span></td></tr><tr id="9b31cafb-0a9b-4907-aa93-154aa72d7c33"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Moquette%20Magenta%20Light40%209b31cafb0a9b4907aa93154aa72d7c33.html">Moquette Magenta /Light40</a></td><td class="cell-bM@h">FE5B8C</td><td class="cell-NQ?H">254/91/140</td><td class="cell-NXiX">0/91/45/0</td><td class="cell-oEo]">1777C</td><td class="cell-tddV">rgba(254, 91, 140, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-pink">Moquette Magenta</span></td></tr><tr id="0148cb7a-b89b-40cf-a70c-e33c04304a33"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Moquette%20Magenta%20Light60%200148cb7ab89b40cfa70ce33c04304a33.html">Moquette Magenta /Light60</a></td><td class="cell-bM@h">FF91B2</td><td class="cell-NQ?H">255/145/178</td><td class="cell-NXiX">0/43/30/0</td><td class="cell-oEo]">183C</td><td class="cell-tddV">rgba(255, 145, 178, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-pink">Moquette Magenta</span></td></tr><tr id="9fc4aeb3-315a-4ea0-9c7c-bc3bb040e0b9"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Moquette%20Magenta%20Dark15%209fc4aeb3315a4ea09c7cbc3bb040e0b9.html">Moquette Magenta /Dark15</a></td><td class="cell-bM@h">C9003C</td><td class="cell-NQ?H">201/0/60</td><td class="cell-NXiX">0/100/70/21</td><td class="cell-oEo]">1935C</td><td class="cell-tddV">rgba(201, 0, 60, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-pink">Moquette Magenta</span></td></tr><tr id="e5ca705f-6bdd-4825-ad5b-75a89b396f75"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Moquette%20Magenta%20Dark40%20e5ca705f6bdd4825ad5b75a89b396f75.html">Moquette Magenta /Dark40</a></td><td class="cell-bM@h">8E002A</td><td class="cell-NQ?H">142/0/42</td><td class="cell-NXiX">0/100/70/44</td><td class="cell-oEo]">207C</td><td class="cell-tddV">rgba(142, 0, 42, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-pink">Moquette Magenta</span></td></tr><tr id="5f6af0aa-8fab-42ad-ab0d-65a2b2aea26e"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Moquette%20Magenta%20Dark60%205f6af0aa8fab42adab0d65a2b2aea26e.html">Moquette Magenta /Dark60</a></td><td class="cell-bM@h">5E001C</td><td class="cell-NQ?H">94/0/28</td><td class="cell-NXiX">0/100/70/63</td><td class="cell-oEo]">4102C</td><td class="cell-tddV">rgba(94, 0, 28, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-pink">Moquette Magenta</span></td></tr><tr id="238e3f38-b759-4b7d-a2a8-4366382c4370"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Clockwork%20Orange%20Light15%20238e3f38b7594b7da2a84366382c4370.html">Clockwork Orange /Light15</a></td><td class="cell-bM@h">FF8126</td><td class="cell-NQ?H">255/129/38</td><td class="cell-NXiX">0/49/85/0</td><td class="cell-oEo]">1575C</td><td class="cell-tddV">rgba(255, 129, 38, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-orange">Clockwork Orange</span></td></tr><tr id="854327bf-eac8-4204-b868-ec86205199e4"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Clockwork%20Orange%20Light40%20854327bfeac84204b868ec86205199e4.html">Clockwork Orange /Light40</a></td><td class="cell-bM@h">FFA665</td><td class="cell-NQ?H">255/166/101</td><td class="cell-NXiX">0/35/60/0</td><td class="cell-oEo]">714C</td><td class="cell-tddV">rgba(255, 166, 101, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-orange">Clockwork Orange</span></td></tr><tr id="0ba8d791-cd87-4bde-b085-fc3c99922d45"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Clockwork%20Orange%20Light60%200ba8d791cd874bdeb085fc3c99922d45.html">Clockwork Orange /Light60</a></td><td class="cell-bM@h">FFC399</td><td class="cell-NQ?H">255/195/153</td><td class="cell-NXiX">0/24/40/0</td><td class="cell-oEo]">712C</td><td class="cell-tddV">rgba(255, 195, 153, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-orange">Clockwork Orange</span></td></tr><tr id="84fb1aca-5f63-43ab-b52f-0a89eba8c207"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Clockwork%20Orange%20Dark15%2084fb1aca5f6343abb52f0a89eba8c207.html">Clockwork Orange /Dark15</a></td><td class="cell-bM@h">D85A00</td><td class="cell-NQ?H">216/90/0</td><td class="cell-NXiX">0/58/100/15</td><td class="cell-oEo]">717C</td><td class="cell-tddV">rgba(216, 90, 0, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-orange">Clockwork Orange</span></td></tr><tr id="3440222b-c3ea-4b36-b684-05b3c933d4dd"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Clockwork%20Orange%20Dark40%203440222bc3ea4b36b68405b3c933d4dd.html">Clockwork Orange /Dark40</a></td><td class="cell-bM@h">994000</td><td class="cell-NQ?H">153/64/0</td><td class="cell-NXiX">0/58/100/40</td><td class="cell-oEo]">1535C</td><td class="cell-tddV">rgba(153, 64, 0, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-orange">Clockwork Orange</span></td></tr><tr id="12544734-eaf4-4f28-8df7-884e6ff20bad"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Clockwork%20Orange%20Dark60%2012544734eaf44f288df7884e6ff20bad.html">Clockwork Orange /Dark60</a></td><td class="cell-bM@h">662A00</td><td class="cell-NQ?H">102/42/0</td><td class="cell-NXiX">0/58/100/60</td><td class="cell-oEo]">732C</td><td class="cell-tddV">rgba(102, 42, 0, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-orange">Clockwork Orange</span></td></tr><tr id="bb294f12-3638-4c65-8f69-6861552440b1"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Searchlight%20Yellow%20Light15%20bb294f1236384c658f696861552440b1.html">Searchlight Yellow /Light15</a></td><td class="cell-bM@h">FFF61D</td><td class="cell-NQ?H">255/246/29</td><td class="cell-NXiX">0/4/89/0</td><td class="cell-oEo]">107C</td><td class="cell-tddV">rgba(255, 246, 29, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-yellow">Searchlight Yellow</span></td></tr><tr id="05b34e99-6226-4885-9e3c-9671e2838817"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Searchlight%20Yellow%20Light40%2005b34e99622648859e3c9671e2838817.html">Searchlight Yellow /Light40</a></td><td class="cell-bM@h">FFF960</td><td class="cell-NQ?H">255/249/96</td><td class="cell-NXiX">0/2/62/0</td><td class="cell-oEo]">100C</td><td class="cell-tddV">rgba(255, 249, 96, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-yellow">Searchlight Yellow</span></td></tr><tr id="644db011-fc3b-4a22-b038-fbb2f3e0c789"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Searchlight%20Yellow%20Light60%20644db011fc3b4a22b038fbb2f3e0c789.html">Searchlight Yellow /Light60</a></td><td class="cell-bM@h">FEFB95</td><td class="cell-NQ?H">254/251/149</td><td class="cell-NXiX">0/1/41/0</td><td class="cell-oEo]">600C</td><td class="cell-tddV">rgba(254, 251, 149, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-yellow">Searchlight Yellow</span></td></tr><tr id="25e90024-c80d-4fbf-a375-151b27fc9a5d"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Searchlight%20Yellow%20Dark15%2025e90024c80d4fbfa375151b27fc9a5d.html">Searchlight Yellow /Dark15</a></td><td class="cell-bM@h">D0C800</td><td class="cell-NQ?H">98/94/0</td><td class="cell-NXiX">0/4/100/18</td><td class="cell-oEo]">7758C</td><td class="cell-tddV">rgba(98, 94, 0, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-yellow">Searchlight Yellow</span></td></tr><tr id="f461226d-4d8d-4fa0-a6c2-5d37de5b533b"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Searchlight%20Yellow%20Dark40%20f461226d4d8d4fa0a6c25d37de5b533b.html">Searchlight Yellow /Dark40</a></td><td class="cell-bM@h">938D00</td><td class="cell-NQ?H">147/141/0</td><td class="cell-NXiX">0/4/100/42</td><td class="cell-oEo]">384C</td><td class="cell-tddV">rgba(147, 141, 0, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-yellow">Searchlight Yellow</span></td></tr><tr id="0077d420-4cb0-4b81-bb44-6e888a98dc8c"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Searchlight%20Yellow%20Dark60%200077d4204cb04b81bb446e888a98dc8c.html">Searchlight Yellow /Dark60</a></td><td class="cell-bM@h">625E00</td><td class="cell-NQ?H">98/94/0</td><td class="cell-NXiX">0/4/100/62</td><td class="cell-oEo]">2307C</td><td class="cell-tddV">rgba(98, 94, 0, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-yellow">Searchlight Yellow</span></td></tr><tr id="28ab5741-fe04-4fce-9fc3-58eadf252872"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Midnight%20Black%20Light15%2028ab5741fe044fce9fc358eadf252872.html">Midnight Black /Light15</a></td><td class="cell-bM@h">32424C</td><td class="cell-NQ?H">50/66/76</td><td class="cell-NXiX">34/13/0/70</td><td class="cell-oEo]">432C</td><td class="cell-tddV">rgba(50, 66, 76, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-blue">Midnight Black</span></td></tr><tr id="a13fb640-39e5-42d7-ab14-ed1235d0dc78"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Midnight%20Black%20Light40%20a13fb64039e542d7ab14ed1235d0dc78.html">Midnight Black /Light40</a></td><td class="cell-bM@h">5F7E91</td><td class="cell-NQ?H">95/126/145</td><td class="cell-NXiX">34/13/0/43</td><td class="cell-oEo]">5415C</td><td class="cell-tddV">rgba(95, 126, 145, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-blue">Midnight Black</span></td></tr><tr id="3c0461db-d618-4b1a-8dea-45b348bb426a"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Midnight%20Black%20Light60%203c0461dbd6184b1a8dea45b348bb426a.html">Midnight Black /Light60</a></td><td class="cell-bM@h">8BA3B2</td><td class="cell-NQ?H">139/163/178</td><td class="cell-NXiX">22/8/0/30</td><td class="cell-oEo]">2163C</td><td class="cell-tddV">rgba(139, 163, 178, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-blue">Midnight Black</span></td></tr><tr id="5ab448f8-4fee-4004-8b99-aeef59f37908"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Midnight%20Black%20Light80%205ab448f84fee40048b99aeef59f37908.html">Midnight Black /Light80</a></td><td class="cell-bM@h">B9C8D1</td><td class="cell-NQ?H">185/200/209</td><td class="cell-NXiX">11/4/0/18</td><td class="cell-oEo]">5445C</td><td class="cell-tddV">rgba(185, 200, 209, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-blue">Midnight Black</span></td></tr><tr id="67076462-716e-4808-b285-6906b44b0a26"><td class="cell-title"><a href="Colores%20corporativos%202d4a2f258df74f6fb58c60f58ecf8be7/Midnight%20Black%20Dark60%2067076462716e4808b2856906b44b0a26.html">Midnight Black /Dark60</a></td><td class="cell-bM@h">060C0F</td><td class="cell-NQ?H">6/12/15</td><td class="cell-NXiX">60/20/0/94</td><td class="cell-oEo]">Black 6C</td><td class="cell-tddV">rgba(6, 12, 15, 1)</td><td class="cell-Ah}u"><span class="selected-value select-value-color-blue">Midnight Black</span></td></tr></tbody></table></div></article></body></html>
